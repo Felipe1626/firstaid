@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo2-MediumItalic';
+  font-size: 1.125rem/* 18px */;
+  line-height: 1.75rem/* 28px */;
+  font-weight: 500;
+
+}
+
+::-webkit-scrollbar{
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-button{
+  background: #fff;
+}
+::-webkit-scrollbar-button:hover{
+  background: rgba(93, 95, 94, 0.712);
+}
+::-webkit-scrollbar-corner{
+  background: black;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+  padding: 1px;
+  border-radius: 5px;
+
+}
+::-webkit-scrollbar-track:hover{
+  background: rgba(48, 117, 96, 0.205);
+
+}
+::-webkit-scrollbar-thumb{
+  background:  rgb(119, 255, 192);
+  border: 2px solid #d6d2d2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(
+      45deg,
+      rgb(183, 1, 255), rgb(119, 255, 192), rgb(206, 83, 255),rgb(0, 190, 117));
+  border-color: rgb(42, 42, 43);
+}
+
+.Exo-2{
+  font-family: 'Exo2-MediumItalic';
+}
+
+@font-face {
+  font-family: 'Exo2-MediumItalic';
+  src: url(../src/assets/Exo_2/static/Exo2-MediumItalic.ttf) format('opentype')
+}
+
+h1{
+  font-family: 'Exo2-MediumItalic';
+}

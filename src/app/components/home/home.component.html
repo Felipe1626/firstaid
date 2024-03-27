@@ -1,0 +1,138 @@
+<section>
+  <div class="h-screen w-full flex justify-center items-center">
+    <p class="w-3/6 text-xl font-semibold">Los primeros auxilios consisten en la atención inmediata que se le da a una persona enferma, lesionada o accidentada en el lugar de los acontecimientos. Son maniobras rápidas, simples y eficaces antes de la llegada del Sistema de Emergencias Medicas (SEM) o ambulancia o de ser trasladado a un centro asistencial u hospitalario. El propósito de los primeros auxilios es aliviar el dolor, la ansiedad del herido o paciente y evitar el agravamiento de su estado</p>
+  </div>
+</section>
+<section class="grid grid-rows-1 grid-cols-2 h-screen">
+  <div class="flex justify-center items-center">
+    <!--Slider-->
+    <div class="relative overflow-hidden">
+      <div class="multi-slider-container flex items-center justify-between overflow-hidden bg-black/20 w-[350px] h-[350px] mx-auto relative group">
+        <div class="slider-track flex">
+          <div *ngFor="let video of displayVideos; let i = index" class="slider-item !w-[350px] rounded relative">
+            <!-- <div class="absolute top-[50%] w-full h-[2px] bg-white"></div> -->
+            <!-- <h3 class="bg-teal-800/20 text-white text-xl py-3 px-2 uppercase font-bold text-center">{{ video.name }}</h3> -->
+            <!-- <video src="{{ video.url }}" autoplay muted class="!h-[410px] bg-black !max-w-[310px] rounded"></video> -->
+            <img src="{{ video.url! }}" alt="{{ video.name }}"  class=" !w-[350px] rounded">
+          </div>
+        </div>  
+        <button (click)="prevV()" class="px-3 py-7 hidden group-hover:block opacity-20 hover:opacity-50 bg-zinc-400 hover:shadow-md hover:shadow-white/80 rounded-md text-3xl font-black border border-transparent hover:border-zinc-50 text-white absolute z-30 left-3 top-[40%]"><fa-icon [icon]="faAngleLeft"></fa-icon></button>
+        <button (click)="nextV()" class="px-3 py-7 hidden group-hover:block opacity-20 hover:opacity-50 bg-zinc-400 hover:shadow-md hover:shadow-white/80 rounded-md text-3xl font-black border border-transparent hover:border-zinc-50 text-white absolute z-30 right-3 top-[40%]"><fa-icon [icon]="faAngleRight"></fa-icon></button>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center items-center">
+    <p class="w:11/12 md:w-4/6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nemo explicabo atque blanditiis odit voluptates! Facilis eos ad odit facere incidunt, ducimus optio eveniet debitis quaerat architecto laudantium delectus iure.</p>
+  </div>
+</section>
+<section>
+    <div class="/signs overflow-hidden gap-1 mx-auto rounded-full grid grid-cols-2 grid-rows-2 w-[400px] relative h-[400px] border border-zinc-800/70">
+        <div class="relative hover:col-span-2 hover:row-span-2 hover:z-50 group">
+            <div class="absolute w-full h-full flex items-center justify-center bg-black/10 ">
+               <div class="bg-black/40 p-4 rounded-md">
+                   <h3 class="text-white font-bold uppercase text-lg">pulso</h3>
+                   <p class="hidden group-hover:block">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ad exercitationem reiciendis nam corrupti dignissimos necessitatibus et dolor, animi odio autem, mollitia modi ex nostrum molestiae sed ipsam veniam hic?
+                   </p> 
+               </div>
+            </div>
+            <img src="../../../assets/7.png" class="bg-zinc-500/30 group-hover:bg-white" alt="">
+        </div>
+        <div class="relative hover:col-span-2 hover:row-span-2 hover:z-50 group">
+            <div class="absolute w-full h-full block bg-black/10"></div>
+            <img src="../../../assets/8.png" class="bg-zinc-500/30 group-hover:bg-white" alt="">
+        </div>
+        <div class="relative hover:col-span-2 hover:row-span-2 hover:z-50 group">
+            <div class="absolute w-full h-full block bg-black/10"></div>
+            <img src="../../../assets/9.png" class="bg-zinc-500/30 group-hover:bg-white" alt="">
+        </div>
+        <div class="relative hover:col-span-2 hover:row-span-2 hover:z-50 group">
+            <div class="absolute w-full h-full block bg-black/10"></div>
+            <img src="../../../assets/10.png" class="bg-zinc-500/30 group-hover:bg-white" alt="">
+        </div>
+    </div>
+    <!-- <div>signos vitales</div>
+    <div>pulso</div>
+    <div>respiracion</div>
+    <div>Saturacion de oxigeno</div>
+    <div>temperatura</div>
+    <div>tension arterial</div> -->
+</section>
+<section class="flex justify-center items-center">
+  <!-- Cheat Cards -->
+  <div class="flex p-12"> 
+    <div class="card w-52 h-80 rounded-lg p-8 relative flex flex-col transition-all shadow shadow-black hover:mr-20 hover:rotate-3 -translate-y-4 border-box bg-green-400">
+        <div class="header">
+            <div class="date">Day/month/year</div>
+            <div class="title">We would love to hear your opinion
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="autor">
+                <a href="https://felipe-rincon.xyz">
+                    <img src="" alt="">
+                    <span>Feelipe</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card w-52 h-80 rounded-lg p-8 relative flex flex-col transition-all shadow shadow-black hover:mr-20 hover:rotate-3 -translate-y-4 border-box bg-green-400 element-1">
+        <div class="header">
+            <div class="date">Day/month/year</div>
+            <div class="title">We would love to hear your opinion
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="autor">
+                <a href="https://felipe-rincon.xyz">
+                    <img src="" alt="">
+                    <span>Feelipe</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card w-52 h-80 rounded-lg p-8 relative flex flex-col transition-all shadow shadow-black hover:mr-20 hover:rotate-3 -translate-y-4 border-box bg-green-400 element-2">
+        <div class="header">
+            <div class="date">Day/month/year</div>
+            <div class="title">We would love to hear your opinion
+                <a href="#">Email</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="autor">
+                <a href="https://felipe-rincon.xyz">
+                    <img src="" alt="">
+                    <span>Feelipe</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="card w-52 h-80 rounded-lg p-8 relative flex flex-col transition-all shadow shadow-black hover:mr-2 hover:rotate-2 -translate-y-4 border-box bg-green-400 element-3">
+        <div class="header">
+            <div class="date">Day/month/year</div>
+            <div class="title">We would love to hear your opinion
+                <a href="#">Website of the autor</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="autor">
+                <a href="https://felipe-rincon.xyz">
+                    <img src="" alt="">
+                    <span>Feelipe</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
