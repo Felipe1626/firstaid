@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BLSComponent } from './components/bls/bls.component';
 import { ChockComponent } from './components/chock/chock.component';
 import { HemorragiasComponent } from './components/hemorragias/hemorragias.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HemorragiasComponent } from './components/hemorragias/hemorragias.compo
     HomeComponent,
     BLSComponent,
     ChockComponent,
-    HemorragiasComponent
+    HemorragiasComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

@@ -604,9 +604,9 @@
     </b>
     <br>
     
-    Tratamiento para la obstrucción causada por un objeto extraño:
+    Tratamiento para la obstrucción causada por un objeto extraño: <br>
     Es importante realizar la Maniobra de Heimlich con cuidado y determinación 
-    para despejar las vías respiratorias de la persona de manera efectiva. 
+    para despejar las vías respiratorias de la persona de manera efectiva. <br>
     Sin embargo, si la persona pierde el conocimiento o no responde, es necesario 
     realizar la reanimación cardiopulmonar (RCP) de inmediato y buscar ayuda médica 
     de emergencia.
@@ -686,24 +686,10 @@
       </div>
     </div>
   </div>
-  <div id="HB" class="justify-center items-center grid grid-cols-1 grid-rows-1 md:grid-cols-2 mx-auto w-5/6">   
-    <!--Slider-->
-    <div class="relative overflow-hidden">
-      <div class="multi-slider-container flex items-center justify-between overflow-hidden bg-emerald-500/20 max-w-[300px] h-[300px] mx-auto relative">
-        <div class="slider-track flex">
-          <div *ngFor="let video of displayH; let i = index" class="slider-item !w-[380px] relative">
-            <h3 class="bg-emerald-500/20 text-white text-xl py-3 px-2 uppercase font-bold text-center">{{ video.name }}</h3>
-            <img src="{{ video.url! }}" class="//!h-[380px] bg-black !w-[380px] rounded" alt="{{ video.name }}">
-          </div>
-        </div>    
-        <button (click)="prevH()" class="px-3 py-7 opacity-20 hover:opacity-50 bg-zinc-400 hover:shadow-md hover:shadow-white/80 rounded-md text-3xl font-black border border-transparent hover:border-zinc-50 text-white absolute z-30 left-3 top-[45%]"><fa-icon [icon]="faAngleLeft"></fa-icon></button>
-        <button (click)="nextH()" class="px-3 py-7 opacity-20 hover:opacity-50 bg-zinc-400 hover:shadow-md hover:shadow-white/80 rounded-md text-3xl font-black border border-transparent hover:border-zinc-50 text-white absolute z-30 right-3 top-[45%]"><fa-icon [icon]="faAngleRight"></fa-icon></button>
-      </div>
-    </div>
-    <div>
-      <h3>Pasos para una adecuada maniobra de heimlish Niños</h3>
-      <ul>
-        <b>
+  <!-- <div class="w-4/6 mx-auto">
+    <h3>Pasos para una adecuada maniobra de heimlish Niños</h3>
+
+    <b>
           Niños (conscientes):
         </b>
         <br>
@@ -719,20 +705,37 @@
         <br>
         RCP (si no respira).
         <br>
-        RCP para bebés: Si el niño es un bebé, siga las pautas específicas de RCP
-        <li>1.</li>
+
+  </div>
+  <div id="HB" class="justify-center items-center grid grid-cols-1 grid-rows-1 md:grid-cols-2 mx-auto w-5/6">   
+        < !--Slider-- >
+    <div class="relative overflow-hidden">
+      <div class="multi-slider-container flex items-center justify-between overflow-hidden bg-emerald-500/20 max-w-[300px] h-[300px] mx-auto relative">
+        <div class="slider-track flex">
+          <div *ngFor="let video of displayH; let i = index" class="slider-item !w-[380px] relative">
+            <h3 class="bg-emerald-500/20 text-white text-xl py-3 px-2 uppercase font-bold text-center">{{ video.name }}</h3>
+            <img src="{{ video.url! }}" class="//!h-[380px] bg-black !w-[380px] rounded" alt="{{ video.name }}">
+          </div>
+        </div>    
+        <button (click)="prevH()" class="px-3 py-7 opacity-20 hover:opacity-50 bg-zinc-400 hover:shadow-md hover:shadow-white/80 rounded-md text-3xl font-black border border-transparent hover:border-zinc-50 text-white absolute z-30 left-3 top-[45%]"><fa-icon [icon]="faAngleLeft"></fa-icon></button>
+        <button (click)="nextH()" class="px-3 py-7 opacity-20 hover:opacity-50 bg-zinc-400 hover:shadow-md hover:shadow-white/80 rounded-md text-3xl font-black border border-transparent hover:border-zinc-50 text-white absolute z-30 right-3 top-[45%]"><fa-icon [icon]="faAngleRight"></fa-icon></button>
+      </div>
+    </div>
+    <div>
+      <ul>
+        <li>1. Pon el nino boca abajo sosteniendolo</li>
         <li>2.</li>
         <li>3.</li>
         <li>4.</li>
 
       </ul>
     </div>
-  </div>
-  <div id="objetos extraños">
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores labore consequatur repellendus enim, similique recusandae voluptas libero doloribus laudantium itaque assumenda. Mollitia, impedit placeat! Fugit molestiae nihil atque dolores porro.
-    </p>
-  </div>
+    <div id="objetos extraños">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores labore consequatur repellendus enim, similique recusandae voluptas libero doloribus laudantium itaque assumenda. Mollitia, impedit placeat! Fugit molestiae nihil atque dolores porro.
+      </p>
+    </div>
+  </div> -->
 </section>
 <div class="block w-4/6 h-1 mx-auto -mt-0.5 rounded-full bg-gradient-to-l from-emerald-400 to-emerald-200 border border-gray-400/5"></div>
 <section class="flex justify-center items-center bg-emerald-200/30 px-2 md:px-10 py-10">
